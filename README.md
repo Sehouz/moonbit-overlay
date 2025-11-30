@@ -9,19 +9,19 @@ NOTE: [moonbit-compiler](https://github.com/moonbitlang/moonbit-compiler) was al
 ### Run [moon](https://github.com/moonbitlang/moon) in one line
 
 ```bash
-nix run github:moonbit-community/moonbit-overlay#moon
+nix run github:sehouz/moonbit-overlay#moon
 ```
 
 ### List all available binaries
 
 ```bash
-nix run github:moonbit-community/moonbit-overlay#<tab>
+nix run github:sehouz/moonbit-overlay#<tab>
 ```
 
 ### Create devshell from template
 
 ```bash
-nix flake init -t github:moonbit-community/moonbit-overlay
+nix flake init -t github:sehouz/moonbit-overlay
 ```
 
 ## Features
@@ -43,7 +43,7 @@ nix flake init -t github:moonbit-community/moonbit-overlay
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     devshell.url = "github:numtide/devshell";
-    moonbit-overlay.url = "github:moonbit-community/moonbit-overlay";
+    moonbit-overlay.url = "github:sehouz/moonbit-overlay";
   };
 
   outputs = inputs@{ flake-parts, ... }:
@@ -85,7 +85,7 @@ nix flake init -t github:moonbit-community/moonbit-overlay
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    moonbit-overlay.url = "github:moonbit-community/moonbit-overlay";
+    moonbit-overlay.url = "github:sehouz/moonbit-overlay";
     moon-registry = {
       url = "mooncakes.io/git/index";
       flake = false;
@@ -151,7 +151,7 @@ moonbit-bin.moonbit.v0_1_20241031-7204facb6
 Check available versions in the [directory](versions/).
 
 > The original version of MoonBit is written as `v0.1.20241031+7204facb6`,
-> for convenience, we [escape](https://github.com/moonbit-community/moonbit-overlay/blob/3464a68cf9a16d4d63f76de823ca9687bca2de2d/lib/moonbit-bin.nix#L22-L24)
+> for convenience, we [escape](https://github.com/sehouz/moonbit-overlay/blob/3464a68cf9a16d4d63f76de823ca9687bca2de2d/lib/moonbit-bin.nix#L22-L24)
 > it to format like `v0_1_20241031-7204facb6`.
 
 ## legacyPackages & packages

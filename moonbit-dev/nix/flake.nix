@@ -6,7 +6,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     devshell.url = "github:numtide/devshell";
-    moonbit-overlay.url = "github:moonbit-community/moonbit-overlay";
+    moonbit-overlay.url = "github:sehouz/moonbit-overlay";
   };
 
   outputs =
